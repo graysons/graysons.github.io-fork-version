@@ -7,20 +7,20 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Siobhan Grayson"
+title                    : "Site Title"
 title_separator          : "-"
-name                     : "Siobhan Grayson"
-description              : "Blog"
-url                      : "http://graysons.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Your Name"
+description              : "An amazing website."
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "graysons/graysons.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : "sblogg" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : siobhan_grayson
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -70,17 +70,17 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google" #false # false (default), "google", "google-universal", "custom"
+  provider               : false # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-98290467-1"
+    tracking_id          :
 
 
 # Site Author
 author:
-  name             : "Siobhan Grayson"
-  avatar           : "https://avatars0.githubusercontent.com/u/16468765?v=3&s=400" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "PhD Researcher in Computer Science"
-  location         : "Dublin, Ireland"
+  name             : "Your Name"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am an amazing person."
+  location         : "Somewhere"
   email            :
   uri              :
   bitbucket        :
@@ -100,7 +100,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : siobhan_grayson
+  twitter          :
   vine             :
   weibo            :
   xing             :
