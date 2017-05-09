@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Siobhán Grayson"
+title                    : "Siobhan Grayson"
 title_separator          : "-"
-name                     : "Siobhán Grayson"
+name                     : "Siobhan Grayson"
 description              : "Blog"
 url                      : "http://graysons.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -77,7 +77,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Siobhán Grayson"
+  name             : "Siobhan Grayson"
   avatar           : "https://avatars0.githubusercontent.com/u/16468765?v=3&s=400" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "PhD Researcher in Computer Science"
   location         : "Dublin, Ireland"
