@@ -5,9 +5,11 @@
 #main {
   @include container;
   @include clearfix;
-  margin-top: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
+  // margin-top: 2em;
+  margin-top: 1em;
+  // border: 1px solid black;
+  padding-left: 5em;
+  padding-right: 5em;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.35s;
@@ -19,10 +21,14 @@
 }
 
 .page {
+  // border: 1px solid black;
+  margin-left: 0;
   @include breakpoint($large) {
-    @include span(10 of 12 last);
+    @include span(9.5 of 12 last);
+    // @include span(8 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include suffix(1.5 of 12);
+    // @include suffix(0.5 of 12);
   }
 
   .page__inner-wrap {
@@ -58,7 +64,7 @@
   }
 
   p, li, dl {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   /* paragraph indents */
@@ -111,7 +117,8 @@
 
 .page__hero {
   position: relative;
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
+  margin-bottom: 0em;
   @include clearfix;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -120,8 +127,10 @@
 
   &--overlay {
     position: relative;
-    margin-bottom: 2em;
-    padding: 3em 0;
+    height: 10em;
+    // margin-bottom: 2em;
+    // padding: 3em 0;
+    padding: 2em 0;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
@@ -132,11 +141,13 @@
             animation-delay: 0.25s;
 
     a {
-      color: #fff;
+      // color: #fff;
+      color: #000;
     }
 
     .wrapper {
-      padding-left: 1em;
+      // padding-left: 1em;
+      padding-left: 5em;
       padding-right: 1em;
 
       @include breakpoint($x-large) {
@@ -148,12 +159,15 @@
     .page__meta,
     .page__lead,
     .btn {
-      color: #fff;
-      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+      // color: #fff;
+      // color: #000;
+      color: $dark-gray;
+      // text-shadow: 1px 1px 4px rgba(#000, 0.5);
     }
 
     .page__lead {
-      max-width: $medium;
+      // max-width: $medium;
+      max-width: $small;
     }
 
     .page__title {
@@ -168,7 +182,8 @@
 
 .page__hero-image {
   width: 100%;
-  height: auto;
+  // height: auto;
+  height: 10em;
   -ms-interpolation-mode: bicubic;
 }
 
@@ -178,7 +193,8 @@
   right: 0;
   margin: 0 auto;
   padding: 2px 5px;
-  color: #fff;
+  // color: #fff;
+  color: #000;
   font-family: $caption-font-family;
   font-size: $type-size-7;
   background: #000;
@@ -385,9 +401,10 @@
    ========================================================================== */
 
 .page__related {
-  margin-top: 2em;
+  // margin-top: 2em;
+  margin-top: 1em;
   padding-top: 1em;
-  border-top: 1px solid $border-color;
+  // border-top: 1px solid $border-color;
   @include clearfix();
   float: left;
 

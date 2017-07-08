@@ -82,6 +82,8 @@ author:
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "PhD Researcher in Computer Science"
   location         : "Dublin, Ireland"
+  employer         : "https://www.insight-centre.org/users/siobhan-grayson"
+  googlescholar    : "https://scholar.google.com/citations?user=BQPowfgAAAAJ&hl=en"
   email            :
   uri              :
   bitbucket        :
@@ -95,7 +97,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "siobhangrayson"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
@@ -106,6 +108,7 @@ author:
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  website          : "https://www.maths.tcd.ie/~graysons/"
 
 
 # Reading Files
@@ -173,7 +176,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 

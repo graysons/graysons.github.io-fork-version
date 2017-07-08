@@ -18,7 +18,9 @@
     display: flex;
     -webkit-box-pack: justify;
      justify-content: space-between;
-    padding: 1em 1em 1em;
+    // padding: 1em 5em 1em 5em;
+    // padding: 0em 5em 0em 5em;
+    padding: 0.25em 5em 0em 5em;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
@@ -72,6 +74,7 @@
 
   &--lg {
     padding-right: 2em;
-    font-weight: 700;
+    // font-weight: 700;
+    font-weight: 300;
   }
 }

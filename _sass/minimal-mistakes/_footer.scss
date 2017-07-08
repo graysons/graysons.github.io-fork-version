@@ -19,13 +19,14 @@
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
   background-color: $lighter-gray;
-  border-top: 1px solid $light-gray;
+  border-top: 0.5px solid $light-gray;
 
   footer {
     @include container;
     @include clearfix;
-    margin-top: 2em;
-    padding: 0 1em 2em;
+    text-align: center;
+    margin-top: 1em;
+    padding: 0em 0em 1em 0em;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
