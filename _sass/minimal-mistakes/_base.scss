@@ -25,6 +25,7 @@ body {
   @include breakpoint($large) {
     // max-width: $large;
     padding: 51px 0 0;  // padding-top equal to masthead height or greater
+    // padding-left: 5em;
   }
 }
 
