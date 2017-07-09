@@ -3,8 +3,16 @@
    ========================================================================== */
 
 .masthead {
-  position: relative;
-  border-bottom: 1px solid $border-color;
+  // position: relative;
+  position: fixed; 
+  -webkit-box-shadow: 0 4px 6px -6px #666;
+  -moz-box-shadow: 0 4px 6px -6px #666;
+  box-shadow: 0 4px 6px -6px #666;
+  top: 0;
+  width: 100%;
+  background: white;  // set a color to hide content that may appear below masthead
+  // border-bottom: 1px solid $border-color;
+  // background-color: $teal;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -19,8 +27,8 @@
     -webkit-box-pack: justify;
      justify-content: space-between;
     // padding: 1em 5em 1em 5em;
-    // padding: 0em 5em 0em 5em;
-    padding: 0.25em 5em 0em 5em;
+    // padding: 0.25em 5em 0em 5em;
+    padding: 0em 5em 0em 5em;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
