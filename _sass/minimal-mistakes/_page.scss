@@ -128,7 +128,8 @@
   &--overlay {
     position: relative;
     height: 10em;
-    // margin-bottom: 2em;
+    // margin-bottom: 0px;
+    margin-bottom: 2em;
     // padding: 3em 0;
     padding: 2em 0;
     @include clearfix;
@@ -145,6 +146,11 @@
       color: #000;
     }
 
+    @include breakpoint(480px) {
+      margin-bottom: 0px;
+    }
+
+
     .wrapper {
       padding-left: 1em;
       // padding-left: 5em;
@@ -153,9 +159,11 @@
       @include breakpoint($x-large) {
         max-width: $x-large;
         padding-left: 5em;
+        // margin-bottom: 0px;
       }
       @include breakpoint($large) {
         padding-left: 5em;
+        // margin-bottom: 0px;
       }
     }
 
