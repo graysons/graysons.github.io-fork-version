@@ -214,40 +214,22 @@
       margin-right: auto;
       // max-width: $x-large;
       text-align: center;
-      // background-color: #000;
-      // background: rgba(255, 255, 255, 0.75);
-      // -webkit-text-stroke: 4px #fff;
-      // text-shadow: #fff 0px 0px 1px;
-      // text-shadow: white 0.1em 0.1em 0.2em;
-      // text-shadow: -1px 0 #fff, 0 1px #fff,
-      // 1px 0 #fff, 0 -1px #fff;
-      // text-shadow: -1px 0 $dark-gray, 0 1px $dark-gray,
-      // 1px 0 $dark-gray, 0 -1px $dark-gray;
-      // -webkit-font-smoothing: antialiased;
-      // color: #000;
-      // padding-right: 0.5em;
-      // -webkit-text-stroke: 1px #fff;
-      // background-color: #fff;
-      // padding-top: 0.25em;
-      // padding-bottom: 0.05em;
     }
 
     .post__lead {
       visibility: hidden;
-      // max-width: $medium;
-      // max-width: $small;
-      // padding-left: 0.5em;
-      // text-align: right;
-      // padding-right: 0.5em;
     }
 
     .post__title {
-      // max-width: $small;
-      // text-align: left;
-      // padding-right: 0.5em;
-      // visibility: hidden;
+      font-size: $type-size-2;
 
+      @include breakpoint($small) {
+        font-size: $type-size-1;
+      }
+    }
 
+    .post__notitle {
+      visibility: hidden;
       font-size: $type-size-2;
 
       @include breakpoint($small) {

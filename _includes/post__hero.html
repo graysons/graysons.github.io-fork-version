@@ -27,6 +27,15 @@
 >
   {% if page.header.overlay_color or page.header.overlay_image %}
     <div class="wrapper">
+      {% if page.header.show_title=="no" %}
+      <h1 class="post__notitle" itemprop="headline"><span>
+        {% if paginator and site.paginate_show_page_num %}
+          {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}
+        {% else %}
+          {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+        {% endif %}
+      <span></h1>
+      {% else %}
       <h1 class="post__title" itemprop="headline"><span>
         {% if paginator and site.paginate_show_page_num %}
           {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}
@@ -34,6 +43,8 @@
           {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
         {% endif %}
       <span></h1>
+      {% endif %}
+
       {% if page.excerpt %}
         <p class="post__lead">{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
       {% endif %}
