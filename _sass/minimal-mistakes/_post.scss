@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SINGLE PAGE/POST
+   SINGLE post/POST
    ========================================================================== */
 
 #main {
@@ -20,7 +20,7 @@
   }
 }
 
-.page {
+.post {
   // border: 1px solid black;
   margin-left: 0;
   @include breakpoint($large) {
@@ -31,32 +31,32 @@
     // @include suffix(0.5 of 12);
   }
 
-  .page__inner-wrap {
+  .post__inner-wrap {
     @include full();
 
-    .page__content,
-    .page__meta,
-    .page__share {
+    .post__content,
+    .post__meta,
+    .post__share {
       @include full();
     }
   }
 }
 
-.page__title {
+.post__title {
   margin-top: 0;
   line-height: 1;
 
-  & + .page__meta {
+  & + .post__meta {
     margin-top: -0.5em;
   }
 }
 
-.page__lead {
+.post__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
 }
 
-.page__content {
+.post__content {
 
   h2 {
     margin-top: 0.25em;
@@ -116,7 +116,7 @@
   }
 }
 
-.page__hero {
+.post__hero {
   position: relative;
   // margin-bottom: 2em;
   margin-bottom: 0em;
@@ -169,33 +169,6 @@
       }
     }
 
-    // -------------------------------------------------------------------------
-    // [SG] Header for pages
-    // -------------------------------------------------------------------------
-    .page__title,
-    .page__meta,
-    .page__lead,
-    .btn {
-      color: $dark-gray;
-    }
-
-    .page__lead,
-    .page__title {
-      max-width: $small;
-      text-align: center;
-    }
-
-    .page__title {
-      font-size: $type-size-2;
-
-      @include breakpoint($small) {
-        font-size: $type-size-1;
-      }
-    }
-
-    // -------------------------------------------------------------------------
-    // [SG] Header for posts edit
-    // -------------------------------------------------------------------------
     .post__title,
     .post__meta,
     .post__lead,
@@ -215,15 +188,7 @@
       // max-width: $x-large;
       text-align: center;
       // background-color: #000;
-      // background: rgba(255, 255, 255, 0.75);
-      // -webkit-text-stroke: 4px #fff;
-      // text-shadow: #fff 0px 0px 1px;
-      // text-shadow: white 0.1em 0.1em 0.2em;
-      // text-shadow: -1px 0 #fff, 0 1px #fff,
-      // 1px 0 #fff, 0 -1px #fff;
-      // text-shadow: -1px 0 $dark-gray, 0 1px $dark-gray,
-      // 1px 0 $dark-gray, 0 -1px $dark-gray;
-      // -webkit-font-smoothing: antialiased;
+      background: rgba(255, 255, 255, 0.75);
       // color: #000;
       // padding-right: 0.5em;
       // -webkit-text-stroke: 1px #fff;
@@ -233,7 +198,6 @@
     }
 
     .post__lead {
-      visibility: hidden;
       // max-width: $medium;
       // max-width: $small;
       // padding-left: 0.5em;
@@ -245,9 +209,6 @@
       // max-width: $small;
       // text-align: left;
       // padding-right: 0.5em;
-      // visibility: hidden;
-
-
       font-size: $type-size-2;
 
       @include breakpoint($small) {
@@ -257,14 +218,14 @@
   }
 }
 
-.page__hero-image {
+.post__hero-image {
   width: 100%;
   // height: auto;
   height: 10em;
   -ms-interpolation-mode: bicubic;
 }
 
-.page__hero-caption {
+.post__hero-caption {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -294,7 +255,7 @@
    Social sharing
    ========================================================================== */
 
-.page__share {
+.post__share {
   margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
@@ -313,7 +274,7 @@
   }
 }
 
-.page__share-title {
+.post__share-title {
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
@@ -321,10 +282,10 @@
 
 
 /*
-   Page meta
+   post meta
    ========================================================================== */
 
-.page__meta {
+.post__meta {
   margin-top: 2em;
   color: mix(#fff, $gray, 25%);
   font-family: $sans-serif;
@@ -339,7 +300,7 @@
   }
 }
 
-.page__meta-title {
+.post__meta-title {
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
@@ -347,10 +308,10 @@
 
 
 /*
-   Page taxonomy
+   post taxonomy
    ========================================================================== */
 
-.page__taxonomy {
+.post__taxonomy {
   .sep {
     display: none;
   }
@@ -360,7 +321,7 @@
   }
 }
 
-.page__taxonomy-item {
+.post__taxonomy-item {
   display: inline-block;
   margin-right: 5px;
   margin-bottom: 8px;
@@ -380,11 +341,11 @@
    Comments
    ========================================================================== */
 
-.page__comments {
+.post__comments {
   @include full();
 }
 
-.page__comments-title {
+.post__comments-title {
   margin-top: 2rem;
   margin-bottom: 10px;
   padding-top: 2rem;
@@ -393,7 +354,7 @@
   text-transform: uppercase;
 }
 
-.page__comments-form {
+.post__comments-form {
   padding: 1em;
   background: $lighter-gray;
   -webkit-transition: $global-transition;
@@ -464,7 +425,7 @@
 }
 
 .comment__date {
-  @extend .page__meta;
+  @extend .post__meta;
   margin: 0;
 
   a {
@@ -477,7 +438,7 @@
    Related
    ========================================================================== */
 
-.page__related {
+.post__related {
   // margin-top: 2em;
   margin-top: 1em;
   padding-top: 1em;
@@ -495,7 +456,7 @@
   }
 }
 
-.page__related-title {
+.post__related-title {
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
