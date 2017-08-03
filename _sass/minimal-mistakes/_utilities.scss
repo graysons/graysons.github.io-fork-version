@@ -282,6 +282,24 @@ body:hover .visually-hidden button {
   .fa-xing-square {
     color: $xing-color;
   }
+
+  // [SG] Additions
+  // Insight Centre Page
+  .fa-briefcase {
+    color: $teal;
+  }
+  // Google Scholar
+  .fa-graduation-cap {
+    color: #4285f4;
+  }
+  // Orcid color
+  .fa-id-badge {
+    color: #a6ce39;
+  }
+  // Personal site
+  .fa-chevron-right {
+    color: #a686f4;
+  }
 }
 
 
