@@ -10,7 +10,25 @@
             {% else %}
               {% assign domain = site.url | append: site.baseurl %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+
+            {% comment %} SG: set "active" class on current page {% endcomment %}
+            {% if link.title == page.title %}
+              <!-- <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}"><span class="active">{{ link.title }}</span></a></li> -->
+              <li class="masthead__menu-item active"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% comment %} SG: Hack for breadcrumbs on blog page. {% endcomment %}
+            {% elsif link.title == 'Blog' and page.tag == 'home' %}
+              <!-- <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}"><span class="active">{{ link.title }}</span></a></li> -->
+              <li class="masthead__menu-item active-blog"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% comment %} SG: Hack 2 for blog posts underlinning blog. {% endcomment %}
+            {% elsif page.tag == 'blog' and link.title == "Blog" %}
+              <li class="masthead__menu-item active-blog"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% comment %} SG: Hack 3 for blog for rhs padding issues. {% endcomment %}
+            {% elsif link.title == 'Blog' and page.tag != 'home' %}
+              <li class="masthead__menu-item blog"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% else %}
+              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% endif %}
+            <!-- <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li> -->
           {% endfor %}
         </ul>
         <button><div class="navicon"></div></button>
