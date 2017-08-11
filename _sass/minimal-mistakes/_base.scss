@@ -47,7 +47,9 @@ h1 span {
 }
 
 h2 {
-  font-size: $type-size-4;
+  // font-size: $type-size-4;
+  font-size: $type-size-3;
+  // font-size: 80px;
 }
 
 h3 {
@@ -62,8 +64,10 @@ h5 {
   font-size: $type-size-6;
 }
 
+// SG hack for top h2 header fix
 h6 {
-  font-size: $type-size-6;
+  // font-size: $type-size-6;
+  font-size: $type-size-3;
 }
 
 small, .small {
@@ -72,6 +76,7 @@ small, .small {
 
 p {
   margin-bottom: 1.3em;
+  line-height: 1.60;
 }
 
 u,
@@ -110,7 +115,8 @@ blockquote {
   padding-left: 1em;
   padding-right: 1em;
   font-style: italic;
-  border-left: 0.25em solid $primary-color;
+  // border-left: 0.25em solid $primary-color;
+  border-left: 0.25em solid $link-color;
 
   cite {
     font-style: italic;

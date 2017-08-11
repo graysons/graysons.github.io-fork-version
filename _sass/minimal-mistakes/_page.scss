@@ -54,12 +54,25 @@
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
+  line-height: 1.5;
 }
 
 .page__content {
 
   h2 {
+    // margin-top: 0.25em;
+    margin-top: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid $border-color;
+    // color: $teal;
+    color: mix(#000, $teal, 10%);
+  }
+
+  h6 {
+    // color: $teal;
+    color: mix(#000, $teal, 10%);
     margin-top: 0.25em;
+    // margin-top: 2em;
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
   }
