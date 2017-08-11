@@ -223,7 +223,7 @@
     outline: none;
     color: #fff;
     // background-color: $primary-color;
-    background-color: $teal;
+    background-color: $link-color;
     cursor: pointer;
   }
 
@@ -271,7 +271,7 @@
 
       &:hover{
         // color: mix(#fff, $teal, 50%);
-        color: $teal;
+        color: $link-color;
       }
 
 
