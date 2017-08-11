@@ -190,6 +190,7 @@
     margin: 0 1rem;
     padding: 0.5rem 0;
     color: $masthead-link-color;
+    // color: $teal;
     text-decoration: none;
 
     &:hover {
@@ -198,17 +199,31 @@
     }
 
     &.site-title {
+      // color: $teal;
+      color: $masthead-link-color;
       margin-left: 0;
     }
+
+    &.site-title:hover {
+      color: $teal;
+      // color: $masthead-link-color-hover;
+    }
+  }
+
+  .title-logo {
+    margin-right: 10px;
+    margin-top: -7px;
   }
 
   button {
     padding: 0 0.5rem;
+    margin-left: 10px;
     align-self: stretch;
     border: 0;
     outline: none;
     color: #fff;
-    background-color: $primary-color;
+    // background-color: $primary-color;
+    background-color: $teal;
     cursor: pointer;
   }
 
@@ -223,7 +238,7 @@
     overflow: hidden;
 
     .active {
-      font-weight: bold;
+      // font-weight: bold;
       box-shadow: 0px -4px 0px $teal inset;
     }
 
@@ -233,7 +248,7 @@
     }
 
     .active-blog {
-      font-weight: bold;
+      // font-weight: bold;
       padding-right: 20px;
       box-shadow: 0px -4px 0px $teal inset;
     }
@@ -254,6 +269,12 @@
     a {
       position: relative;
 
+      &:hover{
+        // color: mix(#fff, $teal, 50%);
+        color: $teal;
+      }
+
+
       &:before {
         content: "";
         color: $teal;
@@ -261,7 +282,8 @@
         left: 0;
         bottom: 0;
         height: 4px;
-        background: mix(#fff, $primary-color, 50%);
+        // background: mix(#fff, $primary-color, 50%);
+        background: mix(#fff, $teal, 50%);
         // background: mix(#fff, $teal, 50%);
         width: 100%;
         -webkit-transition: $global-transition;
