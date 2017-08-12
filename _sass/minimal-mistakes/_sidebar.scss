@@ -74,6 +74,14 @@
    Author profile and links
    ========================================================================== */
 
+// SG: To make things center when page is shrunk.
+.author__all {
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
 .author__avatar {
   display: table-cell;
   margin: auto;
