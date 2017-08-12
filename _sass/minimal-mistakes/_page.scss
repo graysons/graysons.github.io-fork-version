@@ -8,8 +8,10 @@
   // margin-top: 2em;
   margin-top: 1em;
   // border: 1px solid black;
-  padding-left: 5em;
-  padding-right: 5em;
+  // padding-left: 5em;
+  // padding-right: 5em;
+  padding-left: 10%;
+  padding-right: 10%;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.35s;
@@ -77,8 +79,11 @@
     border-bottom: 1px solid $border-color;
   }
 
+  // SG: Hack for repsonsive text size.
   p, li, dl {
-    font-size: 0.825em;
+    // font-size: 0.825em;
+    // font-size: calc(0.825em - 0.05vw);
+    font-size: calc(1.15em - 0.5vw);
   }
 
   /* paragraph indents */
@@ -140,6 +145,7 @@
           animation-delay: 0.25s;
 
   &--overlay {
+    // border-bottom: 1px dashed $lighter-gray;
     position: relative;
     height: 10em;
     // margin-bottom: 0px;
@@ -148,7 +154,7 @@
     padding: 2em 0;
     @include clearfix;
     background-size: cover;
-    // object-fit: cover;
+    object-fit: cover;
     background-repeat: no-repeat;
     background-position: center;
     -webkit-animation: intro 0.3s both;
@@ -190,12 +196,28 @@
     .page__lead,
     .btn {
       color: $dark-gray;
+      // color: #fff;
     }
 
     .page__lead,
     .page__title {
       max-width: $small;
+      // border-right: 5px solid $teal;
+      // margin-left: -25px;
+      // margin-left: auto;
+      // margin-right: auto;
       text-align: center;
+      // background: rgba(000, 000, 000, 0.75);
+      // text-align: right;
+    }
+
+    .page__lead {
+      // background-color: $link-color;
+      // color: $link-color;
+    //   // p {
+    //     color: #fff;
+    //     background-color: rgba(34, 200, 194, 0.75);
+    //   // }
     }
 
     .page__title {

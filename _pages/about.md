@@ -7,6 +7,7 @@ header:
   overlay_image: /assets/images/cat-tweet-12.png
 date: 2017-07-11
 ---
+<hr />
 
 I am a 2nd year PhD Student in Computer Science at the [Insight Centre for Data Analytics](https://www.insight-centre.org/users/siobhan-grayson), University College Dublin.
 My primary research involves identifying structure in multi-relational social networks under the supervision of [Dr. Derek Greene](https://www.insight-centre.org/users/derek-greene). My research interests include machine learning, social network analysis, digital humanities, natural language processing, time series analysis, and anomaly detection.
