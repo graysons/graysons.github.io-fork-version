@@ -7,7 +7,7 @@
    ========================================================================== */
 
 .sidebar {
-  // border: 1px solid black;
+  border: 1px solid black;
   -webkit-transform: translate3d(0, 0 , 0);
           transform: translate3d(0, 0 , 0);
 
@@ -16,6 +16,7 @@
 
   @include breakpoint($large) {
     @include span(2.5 of 12);
+    // border: 1px solid black;
     opacity: 0.75;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -76,8 +77,10 @@
 .author__avatar {
   display: table-cell;
   margin: auto;
-  margin-top: 15px;
-  vertical-align: top;
+  margin-bottom: 0;
+  // margin-top: 15px;
+  vertical-align: middle;
+  // vertical-align: top;
   width: 36px;
   height: 36px;
 

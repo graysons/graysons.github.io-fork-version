@@ -5,7 +5,7 @@ layout: single
 excerpt: "*Science does not know its debt to imagination* - Ralph Waldo Emerson"
 header:
   overlay_image: /assets/images/cat-tweet-12.png
-date: 2017-02-24T03:02:20+00:00
+date: 2017-08-11
 ---
 <hr />
 
