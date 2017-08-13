@@ -6,8 +6,9 @@
   @include container;
   @include clearfix;
   // margin-top: 2em;
-  margin-top: 1em;
-  // border: 1px solid black;
+  margin-top: 0em;
+  // margin-top: 0px;
+  // border: 1px solid red;
   // padding-left: 5em;
   // padding-right: 5em;
   padding-left: 10%;
@@ -20,6 +21,14 @@
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
+
+  // SG: Fix space between main and page-hero.
+  @include breakpoint($large) {
+    margin-top: 0.5em;
+  }
+
+  @include breakpoint($medium-wide);
+    margin-top: 1em;
 }
 
 .page {

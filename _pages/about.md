@@ -27,8 +27,8 @@ Additional interests of mine can be found scattered across the web [here](http:/
 
 ### Awards
 * Finalist for *Data Science Student of the Year* at the [DatSci Awards](https://www.datsciawards.ie/finalists-2017/).
-* Awarded travel grant to attend [aTTACheD workshop](https://dongpng.github.io/attached/).
-* Awarded travel grant and ticket for [PyData Berlin Conference](https://pydata.org/berlin2017/).
+* Awarded travel scholarship to attend [aTTACheD workshop](https://dongpng.github.io/attached/).
+* Awarded travel scholarship and ticket for [PyData Berlin Conference](https://pydata.org/berlin2017/).
 * Best Paper Award at the [2nd International Workshop on Computational History and Data-Driven Humanities](http://www.springer.com/gp/book/9783319462233).
 
 ## Related Activities
