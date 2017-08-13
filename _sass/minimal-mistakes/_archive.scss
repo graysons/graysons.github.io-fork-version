@@ -9,6 +9,13 @@
     @include span(12 of 12);
   }
 
+  @include breakpoint($medium-wide) {
+    .archive__item{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   @include breakpoint($large) {
     // border: 1px solid black;
     // @include span(10 of 12 last);
@@ -93,14 +100,18 @@
 
 .list__item {
   @include breakpoint($medium) {
-    padding-right: $right-sidebar-width-narrow;
+    padding-left: 100px;
+    padding-right: 100px;
+    // padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($large) {
+    padding-left: 0px;
     padding-right: $right-sidebar-width;
   }
 
   @include breakpoint($x-large) {
+    padding-left: 0px;
     padding-right: $right-sidebar-width-wide;
   }
 
