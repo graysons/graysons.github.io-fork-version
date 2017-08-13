@@ -218,15 +218,15 @@
       text-align: center;
       // background: rgba(000, 000, 000, 0.75);
       // text-align: right;
-    }
 
-    .page__lead {
-      // background-color: $link-color;
-      // color: $link-color;
-    //   // p {
-    //     color: #fff;
-    //     background-color: rgba(34, 200, 194, 0.75);
-    //   // }
+      // SG: Fix how page title and leads present.
+      @include breakpoint($large){
+        margin-left: 0px;
+      }
+
+      @include breakpoint($medium-wide);
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .page__title {
